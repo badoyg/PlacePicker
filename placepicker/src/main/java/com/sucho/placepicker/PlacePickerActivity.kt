@@ -33,6 +33,10 @@ class PlacePickerActivity : AppCompatActivity(), OnMapReadyCallback {
   companion object {
     private const val TAG = "PlacePickerActivity"
   }
+  
+  override fun onBackPressed() {
+	// do something
+}
 
   private lateinit var map: GoogleMap
   private lateinit var placeAutocomplete: AutocompleteSupportFragment
